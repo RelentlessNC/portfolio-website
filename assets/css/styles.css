@@ -1,0 +1,272 @@
+:root {
+    --lt1: #AB8569;
+    --lt2: #6D4A2F;
+    --md1: #304154;
+    --dk1: #2A3C51;
+    --dk2: #0D1218;
+    --window-width: view-width;
+    --window-height: view-height;
+}
+
+* {
+    font-family: arial, sans-serif;
+    margin: 0px;
+    padding-top: 0px;
+
+}
+
+html,
+body {
+    background-color: var(--dk1);
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+
+    html,
+    body {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 501px) {
+
+    html,
+    body {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    html,
+    body {
+        font-size: 1.5em;
+    }
+}
+
+.bg-lt {
+    background-color: var(--lt1);
+    color: var(--dk1);
+}
+
+.bg-md {
+    background-color: var(--md1);
+    color: var(--lt1);
+}
+
+.bg-dk {
+    background-color: var(--dk1);
+    color: var(--lt1);
+}
+
+/*--------  All Headings  --------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+/*--------  Top Of Page Header  --------------*/
+header {
+    text-shadow: 1px 1px 2px var(--lt1);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background-color: var(--dk1);
+}
+
+#menu-open-btn {
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+#page-heading {
+    padding-right: 30%;
+    flex-wrap: wrap;
+}
+
+/*--------  Sidebar Navigation  --------------*/
+.side-nav {
+    color: var(--lt1);
+    font-weight: bolder;
+    background-color: var(--dk2);
+    flex-direction: column;
+    height: 100%;
+    padding-right: 5px;
+    position: fixed;
+    flex-wrap: wrap;
+    z-index: 1;
+    display: none;
+}
+
+.side-nav li {
+    height: 20px;
+    margin-top: 10%;
+}
+
+.side-nav a {
+    text-decoration: none;
+    color: var(--lt1);
+}
+
+.close-button {
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+
+.main {
+    width: 100%;
+    z-index: 0;
+}
+
+.flex-row-even {
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+}
+
+hr {
+    color: var(--dk2);
+    border-width: thick;
+    border-style: solid;
+}
+
+#me-block {
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#selfie {
+    border-radius: 50%;
+    width: 20%;
+}
+
+#statement {
+    text-align: justify;
+    padding: 5%;
+}
+
+#about-me {
+    width: 50%;
+    padding: 2%;
+}
+
+/*--------  Skills Section  --------------*/
+#skills {
+    width: 50%;
+    text-align: center;
+    padding: 2%;
+}
+
+.glow-text {
+    color: var(--dk1);
+    text-shadow: 0 0 4px var(--lt2), 0 0 8px var(--md1);
+}
+
+/*--------  Application Cards  --------------*/
+
+/* set padding for div #projects */
+#projects {
+    padding: 2%;
+}
+
+div #project-cards{
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 25%;
+    height: 100%;
+    min-height: 150px;
+    min-width: 150px;
+    border-style: solid;
+    border-width: medium;
+    margin-bottom: 50px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header {
+    background-color: var(--lt1);
+    color: var(--dk2);
+    border-radius: 10px;
+    line-height: 1.2em;
+    width: 50%;
+}
+
+
+/* hide header on hover */
+.card:hover .card-header {
+    display: none;
+}
+
+/* set background images for projects */
+#project1 {
+    width: 100%;
+    background-image: url(https://sidigital.co/static/33c22bbc04bd201be169e8437539e491/37e83/bespoke-software-development.png);
+}
+
+#project2 {
+    background-image: url(https://www.siyavula.com/read/cat/grade-10-cat/computer-software/images/pg105-01.jpg);
+}
+
+#project3 {
+    background-image: url(https://i.pcmag.com/imagery/roundups/02HDufdqeRUDu3tl0NnY2qZ-2.fit_lim.size_760x427.v1649351854.jpg);
+
+}
+
+#project4 {
+    background-image: url(https://www.siyavula.com/read/cat/grade-10-cat/computer-software/images/pg105-01.jpg);
+}
+
+#project5 {
+    background-image: url(https://i.pcmag.com/imagery/roundups/02HDufdqeRUDu3tl0NnY2qZ-2.fit_lim.size_760x427.v1649351854.jpg);
+}
+
+#project6 {
+    background-image: url(https://i.pcmag.com/imagery/roundups/02HDufdqeRUDu3tl0NnY2qZ-2.fit_lim.size_760x427.v1649351854.jpg);
+}
+
+/* hide project description until hover */
+.card .project-description {
+    display: none;
+}
+
+/* display project description on hover*/
+.card:hover .project-description {
+    display: flex;
+    background-color: var(--dk1);
+}
+
+/*--------  Back To Top Button  --------------*/
+#back-to-top {
+    background-color: var(--lt2);
+    border-color: var(--lt1);
+    color: var(--dk2);
+    border-style: solid;
+    border-radius: 20px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 0;
+    font-size: 1.5em;
+}

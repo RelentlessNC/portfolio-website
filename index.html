@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas Conklin Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/cssReset.css">
+    <link rel="stylesheet" href="./assets/css/styles2.css">
+</head>
+
+<body>
+    <header>
+        <div class="flex-row-nowrap">
+            <span id="menu-open-btn" onclick="openNav()">&#9776;</span>
+            <h1 id="page-heading">Portfolio of Nicholas Conklin</h1>
+        </div>
+    </header>
+    <nav class="side-nav" id="side-nav">
+        <span class="close-button" id="nav-close" onclick="closeNav()">&times;</span>
+        <ul>
+            <h2><a href="#about-me">
+                    <li>About Me</li>
+                </a></h2>
+            <h2><a href="#projects">
+                    <li>My Projects</li>
+                </a></h2>
+            <h2>
+                <li>Contact Info</li>
+            </h2>
+        </ul>
+    </nav>
+    <article id="me-block" class="bg-md">
+        <div class="flex-row-nowrap">
+            <p id="statement">My name is Nicholas Conklin and I am a Certified Full Stack Web Developer. I have a B.S. in Computer Science with a focus on software development. I was trained in the U.S. Air Force in logical problem solving that has been fine tuned by academic and professional experience. My focus is attention to detail with the user experience and navigation efficiency.
+            </p>
+            <img id="selfie" src="assets/images/20220112_105834.jpg" />
+        </div>
+    </article>
+    <article class="bg-lt" id="abtme">
+        <div class="flex-row-nowrap">
+            <div id="about-me">
+                <h2 class="topic-heading">About Me</h2>
+                <p>After spending 6 years in the U.S. Air Force, I spent some time figuring out what I wanted to do with the rest of my life. I decided to work with computers in some way. I graudated from McMurry Univerity with a Bachelor's in Science with a Major in Computer Science. I have been working at McMurry University as an LMS Administrator since 2017. I am now enrolled in the Full Stack Web Developer coding bootcamp at UT Austin and hoping to jumpstart my career in a new direction!</p>
+            </div>
+            <div id="skills">
+                <h2 class="topic-heading">My Skills</h2>
+                <p class="glow-text">
+                    HTML5&emsp;
+                    CSS3&emsp;
+                    JavaScript&emsp;
+                    Python3&emsp;
+                    C&emsp;
+                    Bootstrap&emsp;
+                    JQuery&emsp;
+                    SQL&emsp;
+                    React.js&emsp;
+                    JSON&emsp;
+                    AJAX</p>
+            </div>
+        </div>
+    </article>
+    <section class="bg-md" id="projects">
+        <div class="flex-row-wrap">
+            <h2 class="topic-heading">Projects</h2>
+            <div id="project-cards">
+                <div class="card" id="project1">
+                    <h3 class="card-header">Challenge 1</h3>
+                    <p class="project-description">This challenge was to edit the existing HTML and CSS.
+                    </p>
+                </div>
+                <div class="card" id="project2">
+                    <h3 class="card-header">Project 2</h3>
+                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur
+                    </p>
+                </div>
+                <div class="card" id="project3">
+                    <h3 class="card-header">Project 3</h3>
+                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur
+                    </p>
+                </div>
+                <div class="card" id="project4">
+                    <h3 class="card-header">Project 4</h3>
+                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur
+                    </p>
+                </div>
+                <div class="card" id="project5">
+                    <h3 class="card-header">Project 5</h3>
+                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur
+                    </p>
+                </div>
+                <div class="card" id="project6">
+                    <h3 class="card-header">Project 6</h3>
+                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to top button -->
+    <a href="#"><button id="back-to-top" type="reset">&#8593;</button></a>
+
+    <!-- JS to make the sidie nav menu open and close -->
+    <script>
+        function openNav() {
+            document.getElementById("side-nav").style.width = "250px";
+            document.getElementById("side-nav").style.display = "flex";
+            document.getElementById("side-nav").style.transition = "0.3s"
+        }
+
+        function closeNav() {
+            document.getElementById("side-nav").style.width = "0";
+            document.getElementById("side-nav").style.display = "none";
+
+        }
+    </script>
+</body></html>
